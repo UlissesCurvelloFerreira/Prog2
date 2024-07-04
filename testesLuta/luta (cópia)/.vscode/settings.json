@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "SEGURO.C": "cpp",
+        "SEGURO2.C": "cpp",
+        "joystick.h": "c",
+        "SEGURO3.C": "cpp",
+        "stdlib.h": "c",
+        "SEGURO4.C": "cpp",
+        "SEGURO5.C": "cpp",
+        "SEGURO6.C": "cpp",
+        "SEGURO7.C": "cpp",
+        "SEGURO6(malloc).C": "cpp"
+    }
+}
