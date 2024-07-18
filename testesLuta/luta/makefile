@@ -1,8 +1,9 @@
-CC = gcc -O3
+#CC = gcc -O3
+CC = gcc
 CFLAGS = -Wall -Wextra -g
 LDFLAGS = -lallegro -lallegro_main -lallegro_image -lallegro_primitives -lallegro_font -lallegro_ttf -lallegro_audio -lallegro_acodec -lallegro_primitives
 
-SRC = main.c Joystick.c
+SRC = main.c Joystick.c Player.c Game.c
 OBJ = $(SRC:.c=.o)
 EXEC = a
 
