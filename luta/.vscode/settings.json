@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "SEGURO.C": "cpp",
+        "SEGURO2.C": "cpp",
+        "joystick.h": "c",
+        "SEGURO3.C": "cpp",
+        "stdlib.h": "c",
+        "SEGURO4.C": "cpp",
+        "SEGURO5.C": "cpp",
+        "SEGURO6.C": "cpp",
+        "SEGURO7.C": "cpp",
+        "SEGURO6(malloc).C": "cpp",
+        "SEGURO8(HITBOX).C": "cpp",
+        "random": "c",
+        "SEGURO9.C": "cpp",
+        "SEGURO10.C": "cpp",
+        "SEGURO11.C": "cpp",
+        "SEGURO11(DEFESA).C": "cpp",
+        "SEGURO100.C": "cpp",
+        "allegro_ttf.h": "c",
+        "game.h": "c"
+    }
+}
