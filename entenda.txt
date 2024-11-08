@@ -1,0 +1,10 @@
+Entendi! O tabuleiro é um circuito quadrado com 40 casas, onde as casas são distribuídas ao redor de um "buraco" no centro, formando uma espécie de caminho quadrado, como no Banco Imobiliário. Vamos ajustar o código para isso.
+
+Considerações:
+O tabuleiro terá 40 casas dispostas em 10 casas por lado, com um "buraco" no centro.
+As casas serão desenhadas ao longo de um caminho quadrado, com o buraco no centro do caminho.
+O peão deve avançar ao longo dessas casas, de uma forma que respeite a lógica de um caminho fechado.
+Vamos ajustar o código para representar isso:
+
+Distribuição das casas: As casas serão dispostas em quatro lados de um quadrado, com um espaço vazio no centro.
+Buraco no centro: O "buraco" no centro não terá casas desenhadas, mas o peão não deve passar por ele.
