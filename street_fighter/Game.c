@@ -1,7 +1,5 @@
 #include "Game.h"
 
-
-
 /*Função para escolher o mapa. Exibe opções de mapas e permite ao jogador selecionar um.
 A função aguarda eventos de teclado e atualiza a seleção do mapa conforme as teclas pressionadas.
 Se a tecla ESC for pressionada, a função retorna ao menu principal.
