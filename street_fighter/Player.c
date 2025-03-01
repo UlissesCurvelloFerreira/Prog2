@@ -484,16 +484,16 @@ void diminuir_vida (Player *p1, Player *p2)
             if (p1->control->fire) 
             {
                 p2->vida -= 1;
-                printf("p1 aplica 1 de dano\n");
+                //printf("p1 aplica 1 de dano\n");
             }// Se esta defendendo.      
             else if (p2->control->defesa) 
             {
                 p2->vida -= 2;  
-                    printf("p1 aplica 2 de dano\n");
+                    //printf("p1 aplica 2 de dano\n");
             }
             else // Dano normal
             {   p2->vida -= 3;
-                    printf("p1 aplica 3 de dano\n");
+                    //printf("p1 aplica 3 de dano\n");
             }                                        
             leva_dano(p2); 
         }
@@ -503,16 +503,16 @@ void diminuir_vida (Player *p1, Player *p2)
             if (p2->control->fire) 
             {
                 p1->vida -= 1;
-                printf("p2 aplica 1 de dano\n");
+                //printf("p2 aplica 1 de dano\n");
             }// Se esta defendendo.      
             else if (p1->control->defesa) 
             {
                 p1->vida -= 2;  
-                printf("p2 aplica 2 de dano\n");
+                //printf("p2 aplica 2 de dano\n");
             }
             else // Dano normal
             {   p1->vida -= 3;
-                printf("p2 aplica 3 de dano\n");
+                //printf("p2 aplica 3 de dano\n");
             }        
             leva_dano(p1);
         }

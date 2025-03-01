@@ -59,7 +59,7 @@ void escolher_mapas(Game *game, ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_TIMER *timer
                 {
                     player1_selected = 1;
                 }
-                printf("valor de game->mapa_selecionado %d\n", game->mapa_selecionado);
+                //printf("valor de game->mapa_selecionado %d\n", game->mapa_selecionado);
             }
             // quero voltar par o menu:
             if (event.keyboard.keycode == ALLEGRO_KEY_ESCAPE){
@@ -192,7 +192,7 @@ void run_multiplayer(Game *game, ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_TIMER *time
                 }
                 else if (event.keyboard.keycode == ALLEGRO_KEY_P) // Confirma.
                 {
-                    printf("Player 1 selecionou o quadrado %d\n", game->player1->selecao);
+                    //printf("Player 1 selecionou o quadrado %d\n", game->player1->selecao);
                     player1_selected = 1;
                     carrega_sprite(game->player1, game->player1->selecao);
                 }
@@ -222,7 +222,7 @@ void run_multiplayer(Game *game, ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_TIMER *time
                 }
                 else if (event.keyboard.keycode == ALLEGRO_KEY_ENTER) // Confirma.
                 {
-                    printf("Player 2 selecionou o quadrado %d\n", game->player2->selecao);
+                    //printf("Player 2 selecionou o quadrado %d\n", game->player2->selecao);
                     player2_selected = 1;
                     carrega_sprite(game->player2, game->player2->selecao);
                 }
@@ -244,7 +244,7 @@ void run_multiplayer(Game *game, ALLEGRO_EVENT_QUEUE *queue, ALLEGRO_TIMER *time
 
         if (player1_selected && player2_selected)
         {
-            printf("Os dois jogadores selecionaram seus quadrados. Saindo do modo multiplayer...\n");
+            //printf("Os dois jogadores selecionaram seus quadrados. Saindo do modo multiplayer...\n");
             break;
         }
     }
@@ -522,17 +522,17 @@ void exibe_ganhador(Game *game, ALLEGRO_EVENT_QUEUE *queue)
         al_draw_text(font1, al_map_rgb(0, 255, 0), SCREEN_WIDTH / 2, 50, ALLEGRO_ALIGN_CENTER, "EMPATE");
         al_draw_bitmap_region(game->player1->face_sprite, 0, 400 * game->player1->selecao, 300, 400, 100, 100, 0);
         al_draw_bitmap_region(game->player2->face_sprite, 0, 400 * game->player2->selecao, 300, 400, 500, 100, 0);
-        printf("***\nEMPATE NESTA LUTA\n***\n");
+        //printf("***\nEMPATE NESTA LUTA\n***\n");
     }
     else if (game->player1->vitorias == 2){
         al_draw_text(font1, al_map_rgb(0, 255, 0), SCREEN_WIDTH / 2, 50, ALLEGRO_ALIGN_CENTER, "GANHADOR");
         al_draw_bitmap_region(game->player1->face_sprite, 0, 400 * game->player1->selecao, 300, 400, 300, 100, 0);
-        printf("Player 1 venceu o luta!\n");
+        //printf("Player 1 venceu o luta!\n");
     }
     else if (game->player2->vitorias == 2){
         al_draw_text(font1, al_map_rgb(0, 255, 0), SCREEN_WIDTH / 2, 50, ALLEGRO_ALIGN_CENTER, "GANHADOR");
         al_draw_bitmap_region(game->player2->face_sprite, 0, 400 * game->player2->selecao, 300, 400, 300, 100, 0);
-        printf("Player 2 venceu o luta!\n");
+        //printf("Player 2 venceu o luta!\n");
     }
     al_flip_display();
     al_rest(2); // Tempo necessario para que o ganhador seja exibido na tela.
