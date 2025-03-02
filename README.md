@@ -1,16 +1,4 @@
 
-<div style="display: flex; flex-direction: row-reverse; align-items: flex-start;">
-  <div style="width: 30%; position: relative;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 200px; background-color: red;"></div>
-    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background-color: red;"></div>
-  </div>
-  <div style="width: 70%;">
-  </div>
-</div>
-
-<div style="width: 100%; height: 100px; background-color: red; margin-top: 20px;">
-</div>
-
 
 
 
