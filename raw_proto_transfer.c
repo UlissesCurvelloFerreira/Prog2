@@ -146,7 +146,9 @@ int main(int argc, char* argv[]) {
         }
 
         // MAC da outra máquina (EXEMPLO - substitua!)
-        uint8_t dest_mac[6] = {0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF};
+        // MAC da outra máquina (servidor)
+        uint8_t dest_mac[6] = {0x84, 0x7b, 0xeb, 0xfa, 0xd3}; // substituído corretamente
+
         envia_arquivo(sock, interface, dest_mac, argv[3]);
 
     } else if (strcmp(modo, "receiver") == 0) {
