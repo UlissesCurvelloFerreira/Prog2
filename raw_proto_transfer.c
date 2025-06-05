@@ -160,3 +160,18 @@ int main(int argc, char* argv[]) {
     close(sock);
     return 0;
 }
+
+/*
+
+mint@mint:~/Downloads$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 84:47:09:31:3b:c8 brd ff:ff:ff:ff:ff:ff
+3: wlp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DORMANT group default qlen 1000
+    link/ether a0:b3:39:d8:31:3c brd ff:ff:ff:ff:ff:ff
+
+
+
+
+*/
